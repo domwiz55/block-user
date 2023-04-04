@@ -1,0 +1,13 @@
+// Function to block user and display "You can't go there" message
+function blockUser(age, date, time, fullName) {
+    // Validate input
+    if (age === undefined || date === undefined || time === undefined || fullName === undefined) {
+        return "Invalid input, please provide clear instructions.";
+    }
+
+    // Create message
+    let message = `You can't go there. Age: ${age}, Date: ${date}, Time: ${time}, Full Name: ${fullName}.`;
+
+    // Block user
+    console.log(message);
+}
